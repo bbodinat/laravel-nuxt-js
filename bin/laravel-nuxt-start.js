@@ -22,12 +22,22 @@ utils.validateConfig();
 const build = spawn(
     which.sync("nuxt"),
     _.filter([
-        "start",
+        "build",
         `-c=${utils.configPath}`,
         //"--spa",
         program.analyze ? "-a" : "",
         program.color ? "--color" : null,
     ]),
 );
+const start = spawn(
+    which.sync("nuxt"),
+    _.filter([
+        "start",
+        `-c=${utils.configPath}`,
+        program.analyze ? "-a" : "",
+        program.color ? "--color" : null,
+    ]),
+);
 utils.pipeStdio(build, "nuxt");
+utils.pipeStdio(start, "nuxt");
 utils.exitOnClose(build);
