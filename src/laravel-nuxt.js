@@ -33,7 +33,7 @@ module.exports = (options = {}) => {
             _.mergeWith(
                 options,
                 {
-                    mode: "spa",
+                    //mode: "spa",
                     modules: [require.resolve("./module"), "@nuxtjs/axios"],
                     axios: {
                         proxy: isDev,

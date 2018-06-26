@@ -24,7 +24,7 @@ const build = spawn(
     _.filter([
         "build",
         `-c=${utils.configPath}`,
-        "--spa",
+        //"--spa",
         program.analyze ? "-a" : "",
         program.color ? "--color" : null,
     ]),
