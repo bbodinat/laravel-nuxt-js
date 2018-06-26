@@ -40,4 +40,4 @@ const start = spawn(
 );
 //utils.pipeStdio(build, "nuxt");
 utils.pipeStdio(start, "nuxt");
-utils.exitOnClose(build);
+utils.exitOnClose(start);
