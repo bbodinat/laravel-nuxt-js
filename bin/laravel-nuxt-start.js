@@ -38,6 +38,5 @@ const start = spawn(
         program.color ? "--color" : null,
     ]),
 );
-//utils.pipeStdio(build, "nuxt");
 utils.pipeStdio(start, "nuxt");
 utils.exitOnClose(start);
