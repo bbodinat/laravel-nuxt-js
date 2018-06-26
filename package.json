@@ -5,7 +5,8 @@
     "bin": {
         "laravel-nuxt": "./bin/laravel-nuxt.js",
         "laravel-nuxt-dev": "./bin/laravel-nuxt-dev.js",
-        "laravel-nuxt-build": "./bin/laravel-nuxt-build.js"
+        "laravel-nuxt-build": "./bin/laravel-nuxt-build.js",
+        "laravel-nuxt-start": "./bin/laravel-nuxt-start.js"
     },
     "main": "./src/index.js",
     "scripts": {
