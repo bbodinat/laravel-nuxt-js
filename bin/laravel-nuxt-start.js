@@ -22,7 +22,7 @@ utils.validateConfig();
 // const build = spawn(
 //     which.sync("nuxt"),
 //     _.filter([
-//         "build",
+//         "build",Spa
 //         `-c=${utils.configPath}`,
 //         //"--spa",
 //         program.analyze ? "-a" : "",
